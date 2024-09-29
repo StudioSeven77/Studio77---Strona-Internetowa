@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB); /* Gradient jako tło */
+    color: whitesmoke;
+}
+
+#contact {
+    visibility: hidden; /* Ukryj element na początku */
+    opacity: 0; /* Ustaw przezroczystość na 0 */
+    transition: visibility 0s, opacity 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ustaw wysokość na pełny ekran */
+}
+
+.contact-header {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 20px 0;
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.contact-header-caption {
+    font-size: 20px; /* Zwiększenie czcionki dla lepszej widoczności */
+}
+
+.logo-container {
+    margin: 20px 0; /* Odstęp nad i pod logo */
+}
+
+.logo {
+    max-width: 200px; /* Maksymalna szerokość logo */
+    height: auto; /* Automatyczna wysokość */
+}
+
+.contact-content {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    background: rgba(30, 30, 30, 0.9); /* Lekko przezroczyste tło dla formularza */
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Cień dla lepszego efektu wizualnego */
+}
+
+.form-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; /* Wyśrodkowanie nagłówka formularza */
+}
+
+.input-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-name, .input-subject, .input-textarea {
+    background: #050505;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-name {
+    width: 48%; /* Zmiana szerokości dla lepszej responsywności */
+}
+
+.input-subject {
+    width: 100%;
+}
+
+.input-textarea {
+    width: 100%;
+    height: 150px;
+}
+
+button {
+    padding: 8px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    background: #481380;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    opacity: 0.9; /* Zmiana przezroczystości przy najechaniu */
+}
+
+.contact-info {
+    background: rgba(30, 30, 30, 0.9); /* Lekko przezroczyste tło dla kontenerów */
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Cień dla lepszego efektu wizualnego */
+}
+
+.contact-info-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; /* Wyśrodkowanie nagłówka */
+}
+
+.contact-info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-content-line {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-info-icon-text {
+    padding-left: 10px;
+}
+
+.contact-info-icon-text h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600; /* Pogrubienie dla lepszego efektu */
+}
+
+.contact-info-icon-text p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8; /* Zmiana przezroczystości dla lepszej czytelności */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9); /* Lekko przezroczyste tło dla stopki */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    color: whitesmoke;
+}
